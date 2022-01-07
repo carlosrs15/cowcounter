@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+.nav-wrapper{
+	background: #006400;
+}
+
+.logo{
+    color: white; 
+    font-family: Barlow;
+    float: left;
+    position: relative;
+    left: 30px;
+    font-size: 20px;
+}
+.logovacina{
+	position:absolute;
+	left: 45%;
+	font-family: Barlow;
+	font-size: 35px;
+}
+
+.logovender{
+	position:absolute;
+	left: 40%;
+	font-family: Barlow;
+	font-size: 27px;
+}
+.logocad{
+	position:absolute;
+	left: 43%;
+	font-family: Barlow;
+	font-size: 30px;
+	color: 	white;
+}
+.logodetalhes{
+	position:absolute;
+	left: 50%;
+	font-family: Barlow;
+	font-size: 30px;
+	color: 	white;
+}
+nav {
+	font-family: Barlow; 
+}
+nav ul {
+	float: right;
+	margin-right: 15px; /* distancia da direita */
+}
+nav ul li {
+	/* altura dos li's */
+	display: inline-block;
+	line-height: 52px;
+	margin: 1 4px;
+}
+nav ul li a {
+	/* tamanho/distancia do inicio/sair/sobre */
+	color: white;
+	font-size: 17px;
+	padding: 7px 10px;
+	border-radius: 3px;
+}
+
+.icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Rodapé */
+
+.footer{
+	color: white;
+	height: 355px;
+    background-color: #006400; 
+    font-family: Barlow;
+}
+
+/* Contato + Formulário final */
+.c1{
+	height: 100%;
+	float: left;
+	width: 50%;
+	text-align: center;
+	margin-left: -100px;
+}
+
+.c11{
+	text-align: center;
+	font-size: 15px;
+	font-family: Raleway ;
+}
+
+.contato{
+	font-size: 40px;
+}
+
+.desen{
+	height: 100%;
+	text-align: center;
+}
+
+.desenvolvedores{
+	font-size: 40px;
+	text-align: center;
+	height: 100%;
+}
+
+.d1{
+	font-family: Barlow;
+	font-size: 20px;
+	text-align: center;
+}
+.d2{
+	font-family: Raleway;
+	font-size: 15px;
+	text-align: center;
+}
