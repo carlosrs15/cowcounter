@@ -72,3 +72,13 @@ insert into vacina(codigo, nome, descricao, dosagem, administracao, classe) valu
 ('16', 'ABAFORT', 'Eficaz no tratamento e controle de nematóides gastrintestinais, nematóides pulmonares e ectoparasitas de bovinos. Possui amplo espectro, ampla margem de segurança, com baixa dosagem e boa tolerância', 'ABAFORT deve ser administrado na dose de 1 ml para cada 50 kg de peso corporal, equivalente a 200 mcg de Abamectina/kg de peso. Pode ser administrado de forma simultânea com outros produtos injetáveis tais como a vacina contra Clostridiose, Brucelose, etc.', 'ABAFORT deve ser aplicado em injeções subcutâneas, de preferência na região anterior ou posterior da escápula (paleta). Utilizar sempre agulhas e seringas estéreis. Desinfetar o local de aplicação com algodão embebido em álcool iodado ou semelhante.', 'Endectocidas (Anti-Parasitários)'),
 ('17', 'ABAGARD', 'Controle e Tratamento de: Vermes gastrointestinais, Vermes pulmonares, Piolhos, Ácaros e Carrapatos', 'Dose terapêutica / animal: 200mcg de abamectina / kg de peso corporal, ou seja 1 ml de produto para cada 50kg de peso corporal. Atenção: para animais mais pesados, seguir a dose padrão de 1ml/ 50kg de peso corporal.', 'Injetável, por via subcutânea, sob a pele solta na frente ou atrás da escápula.', 'Endectocidas (Anti-Parasitários)');
 select * from vacina;
+
+create table vacinagado(
+codigo int auto_increment not null,
+vacinacodigo int not null,
+boicodigo INT NOT NULL ,
+datavacina  date,
+primary key(codigo),
+foreign key (vacinacodigo) references vacina(codigo),
+foreign key (boicodigo) references marca(codigo)
+);
